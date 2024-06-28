@@ -16,4 +16,4 @@ RAM: 16GBs
 
 Arch Linux
 
-KDE Plasma (Wayland/X11)
+Hyprland

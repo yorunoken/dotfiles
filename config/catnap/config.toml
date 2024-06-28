@@ -1,0 +1,43 @@
+# This is the configuration file for catnip.
+# Here you can configure the stat colors,
+# stat names, stat icons and more!
+#
+# https://github.com/iinsertNameHere/catnip
+
+##############################################
+##          FetchInfo stats Config          ##
+##############################################
+[stats]
+username  = {icon = " ", name = "nme", color = "(RD)"}
+hostname  = {icon = " ", name = "hst", color = "(RD)"}
+uptime    = {icon = " ", name = "upt", color = "(BE)"}
+distro    = {icon = " ", name = "dst", color = "(BE)"}
+kernel    = {icon = " ", name = "ker", color = "(MA)"}
+desktop   = {icon = " ", name = "twm", color = "(MA)"}
+terminal  = {icon = " ", name = "trm", color = "(CN)"}
+shell     = {icon = " ", name = "shl", color = "(CN)"}
+# cpu     = {icon = " ", name = "cpu", color = "(RD)"}
+# disk    = {icon = " ", name = "disk", color = "(GN)"}
+# memory  = {icon = " ", name = "memory", color = "(YW)"}
+sep_color = "SEPARATOR"
+colors    = {icon = " ", name = "clr", color = "!DT!", symbol = ""}
+
+##############################################
+##               Misc Config                ##
+##############################################
+[misc]
+borderstyle = "line"
+layout = "Inline" # [Inline, ArtOnTop, StatsOnTop]
+
+[misc.figletLogos]
+enable = false
+color  = "(YW)"
+font   = "slant"
+margin = [0, 0, 0,]
+
+[misc.imageMode]
+enable = true
+path   = "/home/yoru/.config/catnap/bocchi-transparent.png" # Please use only absolute paths
+
+scale  = 23
+margin = [0, 0, 1]

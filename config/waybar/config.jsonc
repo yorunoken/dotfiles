@@ -1,0 +1,111 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 42,
+    "modules-left": [
+        // "custom/logo",
+        "hyprland/workspaces",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "custom/ncspot"
+    ],
+    "modules-right": [
+        "tray",
+        "clock",
+        "memory",
+        "pulseaudio",
+        "battery",
+        "custom/power"
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "󱓻",
+            "urgent": "󱓻"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "memory": {
+        "interval": 5,
+        "format": "󰍛 {}%",
+        "max-length": 10
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "{calendar}",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "{desc}",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "default": ["󰖀","󰕾",""]
+        },
+        "on-click-middle": "pamixer -t",
+        "on-click": "pavucontrol",
+        "scroll-step": 1
+    },
+    // "custom/logo": {
+    //     "format": "  ",
+    //     "tooltip": false,
+    //     "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+    // },
+    "custom/ncspot": {
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/ncspot.sh",
+        // "exec-if": "pgrep ncspot",
+        // "escape": true,
+        "on-click": "playerctl --player=ncspot previous ",
+        "on-click-middle": "playerctl --player=ncspot play-pause ",
+        "on-click-right": "playerctl --player=ncspot next "
+    },
+    "custom/power": {
+        "format": "󰤆",
+        // "tooltip": false,
+        "tooltip-format": "Power Menu",
+        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
+    }
+}
