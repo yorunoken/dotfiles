@@ -36,3 +36,13 @@ List of hardware I own.
 
 -   **Spelljinxer's dotfiles** - Used their dotfiles, tweaked, and added some more stuff on top : [bocchi's minimal theme](https://github.com/Spelljinxer).
 -   **waybar theme** - Based waybar on their theme : [hyprlock](https://github.com/brunoanesio/waybar-config)
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="./screenshots/1.png" alt="Screenshot 1" width="75%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/2.png" alt="Screenshot 2" width="75%" />
+</p>
