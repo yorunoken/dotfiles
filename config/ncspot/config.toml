@@ -1,0 +1,19 @@
+flip_status_indicators = true
+
+[theme]
+background = "#181818"
+primary = "#F1F1F1"
+secondary = "#DCDCDC"
+title = "#1ED760"
+playing = "#1ED760"
+playing_selected = "#1ED760"
+playing_bg = "#181818"
+highlight = "#1DB954"
+highlight_bg = "#000000"
+error = "#FFE4E4"
+error_bg = "#A50000"
+statusbar = "#000000"
+statusbar_progress = "#00AC4C"
+statusbar_bg = "#00AC4C"
+cmdline = "#CBFFDE"
+cmdline_bg = "#444444"

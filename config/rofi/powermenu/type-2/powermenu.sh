@@ -21,6 +21,7 @@ no=''
 rofi_cmd() {
 	rofi -dmenu \
 		-p "Uptime: $uptime" \
+        -theme-str 'window {location: center; anchor: center;}' \
 		-mesg "Uptime: $uptime" \
 		-theme ${dir}/${theme}.rasi
 }
