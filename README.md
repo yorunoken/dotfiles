@@ -1,6 +1,4 @@
-<p align="center">My dotfiles for Arch Linux, Hyprland :)
-<br><br>
-</p>
+<p align="center">My dotfiles for Arch Linux, Hyprland :)</p>
 
 ## 📦 Programs
 
@@ -20,6 +18,12 @@ List of programs and tools I use.
 | Lockscreen 🔒     | [hyprlock](https://github.com/hyprwm/hyprlock)                                                            |
 | Login Menu 🚪     | [sddm](https://github.com/sddm/sddm)                                                                      |
 | Music Player 🎵   | [ncspot](https://github.com/hrkfdn/ncspot)                                                                |
+
+## 🔤 Fonts
+
+A list of fonts that are used in my dotfiles.
+
+`ttf-material-design-icons`, `nerd-fonts`, `Cantarell`, `Hack`
 
 ## Hardware
 
