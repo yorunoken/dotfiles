@@ -13,7 +13,7 @@ List of programs and tools I use.
 | File Manager 📁   | [yazi](https://github.com/sxyazi/yazi)                                                                    |
 | Messaging App ⌨️  | [vesktop](https://github.com/Vencord/Vesktop)                                                             |
 | Editor 📝         | [vs code](https://code.visualstudio.com/)                                                                 |
-| Browser 🌐        | [firefox](https://github.com/topics/firefox-browser) / [duckduckgo](https://duckduckgo.com/)              |
+| Browser 🌐        | [librewolf](https://librewolf.net/) / [duckduckgo](https://duckduckgo.com/)                               |
 | Status Bar 📊     | [waybar](https://github.com/Alexays/Waybar)                                                               |
 | App Launcher 🚀   | [rofi](https://github.com/davatorium/rofi)                                                                |
 | Lockscreen 🔒     | [hyprlock](https://github.com/hyprwm/hyprlock)                                                            |
