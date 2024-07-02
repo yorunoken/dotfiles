@@ -11,6 +11,7 @@ List of programs and tools I use.
 | Shell 🐚          | [bash](https://www.gnu.org/software/bash/)                                                                |
 | Fetch 🖼️          | [catnip](https://github.com/iinsertNameHere/catnip) / [icon](https://www.pixiv.net/en/artworks/102563034) |
 | File Manager 📁   | [yazi](https://github.com/sxyazi/yazi)                                                                    |
+| Messaging App ⌨️  | [vesktop](https://github.com/Vencord/Vesktop)                                                             |
 | Editor 📝         | [vs code](https://code.visualstudio.com/)                                                                 |
 | Browser 🌐        | [firefox](https://github.com/topics/firefox-browser) / [duckduckgo](https://duckduckgo.com/)              |
 | Status Bar 📊     | [waybar](https://github.com/Alexays/Waybar)                                                               |
