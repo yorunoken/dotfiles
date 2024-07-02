@@ -7,9 +7,11 @@
     "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
+
     "modules-left": ["hyprland/workspaces", "custom/sep", "hyprland/window"],
     "modules-center": ["custom/ncspot"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "clock", "clock#simpleclock", "custom/sep", "tray", "custom/sep", "custom/power"],
+    "modules-right": ["custom/gpu", "cpu", "memory", "custom/sep", "pulseaudio", "clock", "clock#simpleclock", "custom/sep", "tray", "custom/sep", "custom/power"],
+
     "custom/ncspot": {
         "interval": 1,
         "return-type": "json",
@@ -19,6 +21,7 @@
         "on-click-middle": "playerctl --player=ncspot play-pause",
         "on-click-right": "playerctl --player=ncspot next"
     },
+
     "wlr/workspaces": {
         "on-click": "activate",
         "format": "{name}",
@@ -26,26 +29,39 @@
         "disable-scroll": false,
         "active-only": false
     },
+
     "tray": {
         "show-passive-items": true,
         "spacing": 10
     },
+
     "clock#simpleclock": {
         "tooltip": false,
         "format": "  {:%H:%M}"
     },
+
     "clock": {
         "format": "  {:L%a %d %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
+
     "cpu": {
         "format": "  {usage}%",
         "tooltip": true,
         "interval": 1
     },
+
+    "custom/gpu": {
+        "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+        "format": "󰢮  {}%",
+        "return-type": "",
+        "interval": 1
+    },
+
     "memory": {
         "format": "󰍛  {used:0.2f}G"
     },
+
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "  muted",
@@ -58,16 +74,20 @@
             "car": "",
             "default": [" ", " ", " "]
         },
+        "on-click-middle": "pamixer -t",
         "on-click": "pavucontrol"
     },
+
     "custom/logo": {
         "format": "",
         "tooltip": false
     },
+
     "custom/sep": {
         "format": "|",
         "tooltip": false
     },
+
     "custom/power": {
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &",
