@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+installyay() {
+  x sudo pacman -S --needed --noconfirm base-devel
+  x git clone https://aur.archlinux.org/yay-bin.git /tmp/buildyay
+  x cd /tmp/buildyay
+  x makepkg -o
+  x makepkg -se
+  x makepkg -i --noconfirm
+  x cd $base
+  rm -rf /tmp/buildyay
+}
