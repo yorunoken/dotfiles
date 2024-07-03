@@ -8,18 +8,20 @@
     "passthrough": false,
     "fixed-center": true,
 
+
     "modules-left": ["hyprland/workspaces", "custom/sep", "hyprland/window"],
     "modules-center": ["custom/ncspot"],
     "modules-right": ["custom/gpu", "cpu", "memory", "custom/sep", "pulseaudio", "clock", "clock#simpleclock", "custom/sep", "tray", "custom/sep", "custom/power"],
 
+
     "custom/ncspot": {
         "interval": 1,
+        "format": "{}",
         "return-type": "json",
-        "exec": "~/.config/waybar/modules/ncspot.sh",
-        "exec-if": "pgrep ncspot",
-        "on-click": "playerctl --player=ncspot previous",
-        "on-click-middle": "playerctl --player=ncspot play-pause",
-        "on-click-right": "playerctl --player=ncspot next"
+        "exec": "~/.config/waybar/modules/music_player.sh grep",
+        "on-click": "~/.config/waybar/modules/music_player.sh previous",
+        "on-click-middle": "~/.config/waybar/modules/music_player.sh pause",
+        "on-click-right": "~/.config/waybar/modules/music_player.sh next"
     },
 
     "wlr/workspaces": {
@@ -28,6 +30,15 @@
         "all-outputs": true,
         "disable-scroll": false,
         "active-only": false
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+          "(.{72}).*": "$1.."
+        },
+        "icon": true,
+        "icon-size": 22
     },
 
     "tray": {
@@ -54,6 +65,7 @@
     "custom/gpu": {
         "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
         "format": "󰢮  {}%",
+        "format-tooltip": "{}% used",
         "return-type": "",
         "interval": 1
     },
