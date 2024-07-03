@@ -55,11 +55,11 @@ case "$action" in
         playerctl --player=$music_player play-pause
         ;;
     
-    next)
+    previous)
         playerctl --player=$music_player previous
         ;;
 
-    forward)
+    next)
         playerctl --player=$music_player next
         ;;  
     *)
