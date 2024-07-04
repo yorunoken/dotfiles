@@ -141,3 +141,8 @@ window#waybar.empty #window {
 tooltip {
     border-radius: 8px;
 }
+
+#tray menu {
+    background: rgb(24, 24, 37);
+    color: white;
+}
