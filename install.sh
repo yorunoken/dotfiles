@@ -2,9 +2,13 @@
 cd "$(dirname "$0")"
 export base="$(pwd)"
 
-source ./scripts/environment-variables
-source ./scripts/functions
-source ./scripts/installers
+# get config folder
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+ 
+# prevent sudo
+case $(whoami) in
+    root)echo -e "\e[31m[$0]: This script is NOT to be executed with sudo or as root. Aborting...\e[0m";exit 1;;
+esac
 
 if ! command -v pacman >/dev/null 2>&1; then 
     printf "\e[31m[$0]: pacman not found. It seems that the system is not Arch Linux or Arch-based. Aborting...\e[0m\n"
@@ -77,8 +81,12 @@ install_yay_package() {
 
 if ! command -v yay >/dev/null 2>&1;then
     echo -e "\e[33m[$0]: \"yay\" not found, installing...\e[0m"
-  showfun install-yay
-  v install-yay
+    sudo pacman -S --needed --noconfirm base-devel
+    git clone https://aur.archlinux.org/yay-bin.git /tmp/buildyay
+    cd /tmp/buildyay
+    makepkg -si --noconfirm
+    cd $base
+    rm -rf /tmp/buildyay
 fi
 
 install_package hyprland
