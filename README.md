@@ -38,6 +38,23 @@ List of hardware I own.
 | RAM      | 2x8 GB                                                                                                           |
 | Monitor  | 2xLG monitor, @144hz "27                                                                                         |
 
+## 💾 Installation
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/yorunoken/dotfiles.git
+    cd dotfiles
+    ```
+
+2. **Make `install.sh` Executable and Run It:**
+
+    ```bash
+    chmod +x install.sh && ./install.sh
+    ```
+
+3. **Follow Onscreen Instructions.**
+
 ## 📝 Credits
 
 -   **Spelljinxer's dotfiles** - Used their dotfiles, tweaked, and added some more stuff on top : [bocchi's minimal theme](https://github.com/Spelljinxer).
