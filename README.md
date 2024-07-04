@@ -18,6 +18,7 @@ List of programs and tools I use.
 | App Launcher 🚀   | [rofi](https://github.com/davatorium/rofi)                                                                |
 | Lockscreen 🔒     | [hyprlock](https://github.com/hyprwm/hyprlock)                                                            |
 | Login Menu 🚪     | [sddm](https://github.com/sddm/sddm)                                                                      |
+| Color Picker 🖌    | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                        |
 | Music Player 🎵   | [ncspot](https://github.com/hrkfdn/ncspot)                                                                |
 
 ## 🔤 Fonts
