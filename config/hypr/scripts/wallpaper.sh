@@ -15,7 +15,7 @@ case $1 in
 
         hyprctl hyprpaper preload "$RANDOM_WALLPAPER"
         hyprctl hyprpaper wallpaper "DP-1,$RANDOM_WALLPAPER"
-        hyprctl hyprpaper wallpaper "DP-3,$RANDOM_WALLPAPER"
+        hyprctl hyprpaper wallpaper "DP-2,$RANDOM_WALLPAPER"
         hyprctl hyprpaper splash "true"
         exit 1
         ;;
@@ -25,7 +25,7 @@ case $1 in
 
         hyprctl hyprpaper preload "${WALLPAPER_PATH}${SELECTED_WALLPAPER}"
         hyprctl hyprpaper wallpaper "DP-1,${WALLPAPER_PATH}${SELECTED_WALLPAPER}"
-        hyprctl hyprpaper wallpaper "DP-3,${WALLPAPER_PATH}${SELECTED_WALLPAPER}"
+        hyprctl hyprpaper wallpaper "DP-2,${WALLPAPER_PATH}${SELECTED_WALLPAPER}"
         hyprctl hyprpaper splash "true"
         exit 1
         ;;
