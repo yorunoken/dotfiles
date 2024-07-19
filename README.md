@@ -47,13 +47,15 @@ List of hardware I own.
     cd dotfiles
     ```
 
-2. **Make `install.sh` Executable and Run It:**
+2. **Move files to their respective locations**
 
     ```bash
-    chmod +x install.sh && ./install.sh
+    mv ./config ~/.config
     ```
 
-3. **Follow Onscreen Instructions.**
+    ```bash
+    mv ./icons ~/.icons
+    ```
 
 ## 📝 Credits
 
