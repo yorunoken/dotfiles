@@ -54,7 +54,7 @@ window#waybar.hidden {
 #pulseaudio,
 #custom-logo,
 #custom-power,
-#custom-ncspot,
+#custom-music-player,
 #cpu,
 #tray,
 #memory,
@@ -72,11 +72,11 @@ window#waybar.hidden {
     color: #585b70;
 }
 
-#custom-ncspot.playing {
+#custom-music-player.playing {
     color: #cdd6f4;
 }
 
-#custom-ncspot.paused {
+#custom-music-player.paused {
     color: #9399b2;
 }
 

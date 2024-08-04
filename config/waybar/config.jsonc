@@ -8,20 +8,34 @@
     "passthrough": false,
     "fixed-center": true,
 
-
     "modules-left": ["hyprland/workspaces", "custom/sep", "hyprland/window"],
-    "modules-center": ["custom/ncspot"],
-    "modules-right": ["custom/gpu", "cpu", "memory", "custom/sep", "pulseaudio", "clock", "clock#simpleclock", "custom/sep", "tray", "custom/sep", "custom/power"],
+    "modules-center": ["custom/music-player"],
+    "modules-right": [
+        "custom/gpu",
+        "cpu",
+        "memory",
+        "custom/sep",
+        "pulseaudio",
+        "clock",
+        "clock#simpleclock",
+        "custom/sep",
+        "tray",
+        "custom/sep",
+        "custom/power",
+    ],
 
-
-    "custom/ncspot": {
+    "custom/music-player": {
         "interval": 1,
         "format": "{}",
         "return-type": "json",
         "exec": "~/.config/waybar/modules/music_player.sh grep",
         "on-click": "~/.config/waybar/modules/music_player.sh previous",
         "on-click-middle": "~/.config/waybar/modules/music_player.sh pause",
-        "on-click-right": "~/.config/waybar/modules/music_player.sh next"
+        "on-click-right": "~/.config/waybar/modules/music_player.sh next",
+        // "exec": "~/.config/waybar/modules/cider.sh grep",
+        // "on-click": "~/.config/waybar/modules/cider.sh previous",
+        // "on-click-middle": "~/.config/waybar/modules/cider.sh pause",
+        // "on-click-right": "~/.config/waybar/modules/cider.sh next",
     },
 
     "wlr/workspaces": {
@@ -29,37 +43,38 @@
         "format": "{name}",
         "all-outputs": true,
         "disable-scroll": false,
-        "active-only": false
+        "active-only": false,
     },
 
     "hyprland/window": {
         "format": "{}",
         "rewrite": {
-          "(.{72}).*": "$1.."
+            "(.{72}).*": "$1..",
         },
         "icon": true,
-        "icon-size": 22
+        "icon-size": 22,
     },
 
     "tray": {
         "show-passive-items": true,
-        "spacing": 10
+        "spacing": 10,
     },
 
     "clock#simpleclock": {
         "tooltip": false,
-        "format": "  {:%H:%M}"
+        "format": "  {:%H:%M}",
     },
 
     "clock": {
         "format": "  {:L%a %d %b}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "on-click": "gnome-calendar",
     },
 
     "cpu": {
         "format": "  {usage}%",
         "tooltip": true,
-        "interval": 1
+        "interval": 1,
     },
 
     "custom/gpu": {
@@ -67,11 +82,11 @@
         "format": "󰢮  {}%",
         "format-tooltip": "{}% used",
         "return-type": "",
-        "interval": 1
+        "interval": 1,
     },
 
     "memory": {
-        "format": "󰍛  {used:0.2f}G"
+        "format": "󰍛  {used:0.2f}G",
     },
 
     "pulseaudio": {
@@ -84,25 +99,25 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": [" ", " ", " "]
+            "default": [" ", " ", " "],
         },
         "on-click-middle": "pamixer -t",
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
     },
 
     "custom/logo": {
         "format": "",
-        "tooltip": false
+        "tooltip": false,
     },
 
     "custom/sep": {
         "format": "|",
-        "tooltip": false
+        "tooltip": false,
     },
 
     "custom/power": {
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &",
-        "format": "⏻ "
-    }
+        "format": "⏻ ",
+    },
 }

@@ -21,7 +21,7 @@ case $1 in
         ;;
 
     select)
-        SELECTED_WALLPAPER=$(find "$WALLPAPER_PATH" -type f | sh ~/.config/rofi/wallpaper/wallpaper.sh)
+        SELECTED_WALLPAPER=$(find "$WALLPAPER_PATH" -type f | sh ~/.config/wofi/modules/wallpaper/wallpaper.sh)
 
         hyprctl hyprpaper preload "${WALLPAPER_PATH}${SELECTED_WALLPAPER}"
         hyprctl hyprpaper wallpaper "DP-1,${WALLPAPER_PATH}${SELECTED_WALLPAPER}"
@@ -34,4 +34,3 @@ case $1 in
         exit 1
         ;;
 esac
-

@@ -10,6 +10,6 @@ echo "Selected random wallpaper: $RANDOM_WALLPAPER"
 
 hyprctl hyprpaper preload "$RANDOM_WALLPAPER"
 hyprctl hyprpaper wallpaper "DP-1,$RANDOM_WALLPAPER"
-hyprctl hyprpaper wallpaper "DP-3,$RANDOM_WALLPAPER"
+hyprctl hyprpaper wallpaper "DP-2,$RANDOM_WALLPAPER"
 hyprctl hyprpaper splash "true"
 # sh "$HOME/.config/hypr/scripts/gamemode.sh"
