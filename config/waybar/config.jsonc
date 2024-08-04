@@ -11,9 +11,7 @@
     "modules-left": ["hyprland/workspaces", "custom/sep", "hyprland/window"],
     "modules-center": ["custom/music-player"],
     "modules-right": [
-        "custom/gpu",
-        "cpu",
-        "memory",
+        "custom/screen-recorder",
         "custom/sep",
         "pulseaudio",
         "clock",
@@ -24,6 +22,16 @@
         "custom/power",
     ],
 
+    "custom/screen-recorder": {
+        "exec": "~/.config/waybar/modules/screen_recorder_init.sh",
+        "interval": 1,
+        "return-type": "json",
+        "format": "{}",
+        "on-click": "~/.config/waybar/modules/screen_recorder.sh save",
+        "on-click-middle": "~/.config/waybar/modules/screen_recorder.sh restart",
+        "on-click-right": "~/.config/waybar/modules/screen_recorder.sh stop",
+    },
+
     "custom/music-player": {
         "interval": 1,
         "format": "{}",
@@ -32,10 +40,6 @@
         "on-click": "~/.config/waybar/modules/music_player.sh previous",
         "on-click-middle": "~/.config/waybar/modules/music_player.sh pause",
         "on-click-right": "~/.config/waybar/modules/music_player.sh next",
-        // "exec": "~/.config/waybar/modules/cider.sh grep",
-        // "on-click": "~/.config/waybar/modules/cider.sh previous",
-        // "on-click-middle": "~/.config/waybar/modules/cider.sh pause",
-        // "on-click-right": "~/.config/waybar/modules/cider.sh next",
     },
 
     "wlr/workspaces": {
@@ -69,24 +73,6 @@
         "format": "  {:L%a %d %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "on-click": "gnome-calendar",
-    },
-
-    "cpu": {
-        "format": "  {usage}%",
-        "tooltip": true,
-        "interval": 1,
-    },
-
-    "custom/gpu": {
-        "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
-        "format": "󰢮  {}%",
-        "format-tooltip": "{}% used",
-        "return-type": "",
-        "interval": 1,
-    },
-
-    "memory": {
-        "format": "󰍛  {used:0.2f}G",
     },
 
     "pulseaudio": {

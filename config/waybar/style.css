@@ -59,6 +59,7 @@ window#waybar.hidden {
 #tray,
 #memory,
 #window,
+#custom-screen-recorder,
 #custom-gpu {
     min-height: 0;
     padding: 2px 10px;
@@ -70,6 +71,14 @@ window#waybar.hidden {
 #custom-sep {
     padding: 0px;
     color: #585b70;
+}
+
+#custom-screen-recorder.recording {
+    color: #10ef2c;
+}
+
+#custom-screen-recorder.not-recording {
+    color: #df2020;
 }
 
 #custom-music-player.playing {
