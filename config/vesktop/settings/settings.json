@@ -105,7 +105,7 @@
             "eagerLoad": true
         },
         "BetterUploadButton": {
-            "enabled": false
+            "enabled": true
         },
         "BiggerStreamPreview": {
             "enabled": true
@@ -207,7 +207,7 @@
             "enabled": false
         },
         "iLoveSpam": {
-            "enabled": false
+            "enabled": true
         },
         "IgnoreActivities": {
             "enabled": false
@@ -255,7 +255,9 @@
             "ignoreSelf": true,
             "ignoreUsers": "",
             "ignoreChannels": "",
-            "ignoreGuilds": ""
+            "ignoreGuilds": "",
+            "collapseDeleted": false,
+            "inlineEdits": true
         },
         "MessageTags": {
             "enabled": false
@@ -602,7 +604,9 @@
             "enabled": false
         },
         "CtrlEnterSend": {
-            "enabled": false
+            "enabled": false,
+            "submitRule": "ctrl+enter",
+            "sendMessageInTheMiddleOfACodeBlock": true
         },
         "CustomIdle": {
             "enabled": false
@@ -629,9 +633,6 @@
         "ValidReply": {
             "enabled": false
         },
-        "WatchTogetherAdblock": {
-            "enabled": true
-        },
         "MessageUpdaterAPI": {
             "enabled": true
         },
@@ -652,6 +653,15 @@
         },
         "ShowAllRoles": {
             "enabled": false
+        },
+        "ConsoleJanitor": {
+            "enabled": true
+        },
+        "MentionAvatars": {
+            "enabled": false
+        },
+        "YoutubeAdblock": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -664,6 +674,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1719926034260
+        "settingsSyncVersion": 1722592429123
     }
 }
