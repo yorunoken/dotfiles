@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 34,
+    "height": 39,
     "spacing": 4,
     "exclusive": true,
     "gtk-layer-shell": true,
@@ -18,8 +18,6 @@
         "clock#simpleclock",
         "custom/sep",
         "tray",
-        "custom/sep",
-        "custom/power",
     ],
 
     "custom/screen-recorder": {
