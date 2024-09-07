@@ -1,10 +1,9 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 39,
+    "height": 36,
     "spacing": 4,
     "exclusive": true,
-    "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
 
@@ -14,8 +13,9 @@
         "custom/screen-recorder",
         "custom/sep",
         "pulseaudio",
+        "pulseaudio#microphone",
         "clock",
-        "clock#simpleclock",
+        "clock#date",
         "custom/sep",
         "tray",
     ],
@@ -51,7 +51,7 @@
     "hyprland/window": {
         "format": "{}",
         "rewrite": {
-            "(.{72}).*": "$1..",
+            "(.{42}).*": "$1..",
         },
         "icon": true,
         "icon-size": 22,
@@ -62,15 +62,27 @@
         "spacing": 10,
     },
 
-    "clock#simpleclock": {
+    "clock": {
         "tooltip": false,
         "format": "  {:%H:%M}",
     },
 
-    "clock": {
+    "clock#date": {
         "format": "  {:L%a %d %b}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "on-click": "gnome-calendar",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#f5e0dc'><b>{}</b></span>",
+                "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+                "today": "<span color='#f38ba8'><b>{}</b></span>",
+            },
+        },
+        "actions": { "on-click-right": "mode" },
+        "min-length": 8,
+        "max-length": 28,
     },
 
     "pulseaudio": {
@@ -89,9 +101,15 @@
         "on-click": "pavucontrol",
     },
 
-    "custom/logo": {
-        "format": "",
-        "tooltip": false,
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "on-click": "pavucontrol -t 4",
+        "on-click-middle": "~/.config/hypr/scripts/volume.sh --toggle-mic",
+        "on-scroll-up": "~/.config/hypr/scripts/volume.sh --mic-inc",
+        "on-scroll-down": "~/.config/hypr/scripts/volume.sh --mic-dec",
+        "tooltip-format": "{source_desc} | {source_volume}%",
     },
 
     "custom/sep": {

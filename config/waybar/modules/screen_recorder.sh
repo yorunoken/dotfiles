@@ -9,7 +9,6 @@ case "$action" in
         ;;
     restart)
         sh ~/.config/hypr/scripts/gpu_recorder.sh
-        notify-send "Screen Recorder" "Recording restarted."
         ;;
     save)
         killall -SIGUSR1 gpu-screen-recorder

@@ -4,22 +4,23 @@
 
 List of programs and tools I use.
 
-| Component         | Program                                                                                                   |
-| ----------------- | --------------------------------------------------------------------------------------------------------- |
-| Window Manager 🪟 | [hyprland](https://github.com/hyprwm/Hyprland)                                                            |
-| Terminal 🖥️       | [kitty](https://github.com/kovidgoyal/kitty)                                                              |
-| Shell 🐚          | [bash](https://www.gnu.org/software/bash/)                                                                |
-| Fetch 🖼️          | [catnip](https://github.com/iinsertNameHere/catnip) / [icon](https://www.pixiv.net/en/artworks/102563034) |
-| File Manager 📁   | [yazi](https://github.com/sxyazi/yazi)                                                                    |
-| Messaging App ⌨️  | [vesktop](https://github.com/Vencord/Vesktop)                                                             |
-| Editor 📝         | [vs code](https://code.visualstudio.com/)                                                                 |
-| Browser 🌐        | [librewolf](https://librewolf.net/) / [duckduckgo](https://duckduckgo.com/)                               |
-| Status Bar 📊     | [waybar](https://github.com/Alexays/Waybar)                                                               |
-| App Launcher 🚀   | [rofi](https://github.com/davatorium/rofi)                                                                |
-| Lockscreen 🔒     | [hyprlock](https://github.com/hyprwm/hyprlock)                                                            |
-| Login Menu 🚪     | [sddm](https://github.com/sddm/sddm)                                                                      |
-| Color Picker 🖌    | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                        |
-| Music Player 🎵   | [ncspot](https://github.com/hrkfdn/ncspot)                                                                |
+| Component          | Program                                                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| Window Manager 🪟  | [hyprland](https://github.com/hyprwm/Hyprland)                                                            |
+| Terminal 🖥️        | [kitty](https://github.com/kovidgoyal/kitty)                                                              |
+| Shell 🐚           | [bash](https://www.gnu.org/software/bash/)                                                                |
+| Fetch 🖼️           | [catnip](https://github.com/iinsertNameHere/catnip) / [icon](https://www.pixiv.net/en/artworks/102563034) |
+| File Manager 📁    | [yazi](https://github.com/sxyazi/yazi)                                                                    |
+| Messaging App ⌨️   | [vesktop](https://github.com/Vencord/Vesktop)                                                             |
+| Editor 📝          | [vs code](https://code.visualstudio.com/)                                                                 |
+| Browser 🌐         | [librewolf](https://librewolf.net/) / [duckduckgo](https://duckduckgo.com/)                               |
+| Status Bar 📊      | [waybar](https://github.com/Alexays/Waybar)                                                               |
+| App Launcher 🚀    | [wofi](https://hg.sr.ht/~scoopta/wofi)                                                                    |
+| Lockscreen 🔒      | [hyprlock](https://github.com/hyprwm/hyprlock)                                                            |
+| Login Menu 🚪      | [sddm](https://github.com/sddm/sddm)                                                                      |
+| Color Picker 🖌     | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                        |
+| Music Player 🎵    | [ncspot](https://github.com/hrkfdn/ncspot)                                                                |
+| Screen Recorder 💻 | [GPU screen recorder](hhttps://git.dec05eba.com/gpu-screen-recorder/about/)                               |
 
 ## 🔤 Fonts
 
@@ -37,25 +38,6 @@ List of hardware I own.
 | CPU      | [AMD Ryzen 5 5600](https://www.amazon.com/AMD-5600-12-Thread-Unlocked-Processor/dp/B09VCHR1VH)                   |
 | RAM      | 2x8 GB                                                                                                           |
 | Monitor  | 2xLG monitor, @144hz "27                                                                                         |
-
-## 💾 Installation
-
-1. **Clone the Repository:**
-
-    ```bash
-    git clone https://github.com/yorunoken/dotfiles.git
-    cd dotfiles
-    ```
-
-2. **Move files to their respective locations**
-
-    ```bash
-    mv ./config ~/.config
-    ```
-
-    ```bash
-    mv ./icons ~/.icons
-    ```
 
 ## 📝 Credits
 
