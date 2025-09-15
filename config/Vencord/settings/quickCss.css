@@ -1,0 +1,9 @@
+/* Get rid of "create DM" button in homepage */
+.createDMButtonContainer__35e86 {
+    display: none;
+}
+
+/* Add Padding on top of Direct Messages tab in homepage to make room for Pins */
+.privateChannelsHeaderContainer__99e7c {
+    margin-top: 0.2rem;
+}

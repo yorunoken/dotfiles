@@ -1,0 +1,6 @@
+/proc/*
+/sys/*
+/tmp/*
+*/node_modules/*
+/mnt/*
+
