@@ -1,1 +1,0 @@
-require("folder-rules"):setup()
